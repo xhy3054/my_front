@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/orb/orb.cpp
+ORBextractor.h
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/orb/ORBextractor.h
+iostream
+-
+opencv2/opencv.hpp
+-
+time.h
+-
+

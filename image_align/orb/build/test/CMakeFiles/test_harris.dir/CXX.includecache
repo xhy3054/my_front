@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/harris/test_harris.cpp
+opencv2/highgui.hpp
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/harris/opencv2/highgui.hpp
+opencv2/imgproc.hpp
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/harris/opencv2/imgproc.hpp
+myharris.h
+/home/sky/workspace/myrepo/my_front/image_align/orb/test/harris/myharris.h
+iostream
+-
+

@@ -1,0 +1,3 @@
+/home/sky/workspace/myrepo/my_front/feature_point/GCN/build/CMakeFiles/rebuild_cache.dir
+/home/sky/workspace/myrepo/my_front/feature_point/GCN/build/CMakeFiles/edit_cache.dir
+/home/sky/workspace/myrepo/my_front/feature_point/GCN/build/CMakeFiles/gcn.dir

@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sky/workspace/myrepo/my_front/image_align/orb/src/ORBextractor.cpp
+opencv2/core/core.hpp
+-
+opencv2/highgui/highgui.hpp
+-
+opencv2/features2d/features2d.hpp
+-
+opencv2/imgproc/imgproc.hpp
+-
+vector
+-
+ORBextractor.h
+/home/sky/workspace/myrepo/my_front/image_align/orb/src/ORBextractor.h
+

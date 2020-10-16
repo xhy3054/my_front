@@ -1,0 +1,46 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/feature_tracker.h
+cstdio
+-
+iostream
+-
+queue
+-
+execinfo.h
+-
+csignal
+-
+opencv2/opencv.hpp
+-
+eigen3/Eigen/Dense
+-
+time.h
+-
+tic_toc.h
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/tic_toc.h
+
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/main.cpp
+iostream
+-
+opencv2/opencv.hpp
+-
+time.h
+-
+feature_tracker.h
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/feature_tracker.h
+
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/tic_toc.h
+ctime
+-
+cstdlib
+-
+chrono
+-
+
