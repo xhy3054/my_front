@@ -31,7 +31,9 @@ include_directories( ${OpenCV_INCLUDE_DIRS} )
 
 include_directories("/usr/include/eigen3")
 
+
 SET(TORCH_PATH /home/sky/Documents/torch/1-0-1/pytorch/torch/lib/tmp_install/share/cmake/Torch)
+#SET(TORCH_PATH /home/sky/Documents/torch/1-2-0/pytorch/torch/share/cmake/Torch)
 
 if( TORCH_PATH ) 
    message(" set to: ${TORCH_PATH}")
@@ -51,3 +53,8 @@ endif()
 add_executable(gcn test1.cpp GCNextractor.cc)
 target_link_libraries(gcn ${OpenCV_LIBS} ${TORCH_LIBRARIES})
 
+add_executable(gcn_with_flow gcn_with_flow.cpp GCNextractor.cc)
+target_link_libraries(gcn_with_flow ${OpenCV_LIBS} ${TORCH_LIBRARIES})
+
+add_executable(video video.cpp GCNextractor.cc)
+target_link_libraries(video ${OpenCV_LIBS} ${TORCH_LIBRARIES})

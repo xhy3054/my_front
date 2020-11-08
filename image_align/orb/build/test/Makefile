@@ -126,6 +126,21 @@ test_harris/fast:
 .PHONY : test_harris/fast
 
 # Convenience name for target.
+test/CMakeFiles/video.dir/rule:
+	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/video.dir/rule
+.PHONY : test/CMakeFiles/video.dir/rule
+
+# Convenience name for target.
+video: test/CMakeFiles/video.dir/rule
+
+.PHONY : video
+
+# fast build rule for target.
+video/fast:
+	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/build
+.PHONY : video/fast
+
+# Convenience name for target.
 test/CMakeFiles/orb.dir/rule:
 	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/orb.dir/rule
 .PHONY : test/CMakeFiles/orb.dir/rule
@@ -236,6 +251,33 @@ orb/orb.cpp.s:
 	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f test/CMakeFiles/orb.dir/build.make test/CMakeFiles/orb.dir/orb/orb.cpp.s
 .PHONY : orb/orb.cpp.s
 
+orb/video.o: orb/video.cpp.o
+
+.PHONY : orb/video.o
+
+# target to build an object file
+orb/video.cpp.o:
+	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/orb/video.cpp.o
+.PHONY : orb/video.cpp.o
+
+orb/video.i: orb/video.cpp.i
+
+.PHONY : orb/video.i
+
+# target to preprocess a source file
+orb/video.cpp.i:
+	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/orb/video.cpp.i
+.PHONY : orb/video.cpp.i
+
+orb/video.s: orb/video.cpp.s
+
+.PHONY : orb/video.s
+
+# target to generate assembly for a file
+orb/video.cpp.s:
+	cd /home/sky/workspace/myrepo/my_front/image_align/orb/build && $(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/orb/video.cpp.s
+.PHONY : orb/video.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -244,6 +286,7 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... test_harris"
+	@echo "... video"
 	@echo "... edit_cache"
 	@echo "... orb"
 	@echo "... orb-slam"
@@ -256,6 +299,9 @@ help:
 	@echo "... orb/orb.o"
 	@echo "... orb/orb.i"
 	@echo "... orb/orb.s"
+	@echo "... orb/video.o"
+	@echo "... orb/video.i"
+	@echo "... orb/video.s"
 .PHONY : help
 
 

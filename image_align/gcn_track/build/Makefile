@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/sky/workspace/myrepo/my_front/image_align/gcn_track/bui
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -123,6 +123,32 @@ gcn/fast:
 	$(MAKE) -f CMakeFiles/gcn.dir/build.make CMakeFiles/gcn.dir/build
 .PHONY : gcn/fast
 
+#=============================================================================
+# Target rules for targets named gcn_with_flow
+
+# Build rule for target.
+gcn_with_flow: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 gcn_with_flow
+.PHONY : gcn_with_flow
+
+# fast build rule for target.
+gcn_with_flow/fast:
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/build
+.PHONY : gcn_with_flow/fast
+
+#=============================================================================
+# Target rules for targets named video
+
+# Build rule for target.
+video: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 video
+.PHONY : video
+
+# fast build rule for target.
+video/fast:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
+.PHONY : video/fast
+
 GCNextractor.o: GCNextractor.cc.o
 
 .PHONY : GCNextractor.o
@@ -130,6 +156,8 @@ GCNextractor.o: GCNextractor.cc.o
 # target to build an object file
 GCNextractor.cc.o:
 	$(MAKE) -f CMakeFiles/gcn.dir/build.make CMakeFiles/gcn.dir/GCNextractor.cc.o
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/GCNextractor.cc.o
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/GCNextractor.cc.o
 .PHONY : GCNextractor.cc.o
 
 GCNextractor.i: GCNextractor.cc.i
@@ -139,6 +167,8 @@ GCNextractor.i: GCNextractor.cc.i
 # target to preprocess a source file
 GCNextractor.cc.i:
 	$(MAKE) -f CMakeFiles/gcn.dir/build.make CMakeFiles/gcn.dir/GCNextractor.cc.i
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/GCNextractor.cc.i
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/GCNextractor.cc.i
 .PHONY : GCNextractor.cc.i
 
 GCNextractor.s: GCNextractor.cc.s
@@ -148,7 +178,36 @@ GCNextractor.s: GCNextractor.cc.s
 # target to generate assembly for a file
 GCNextractor.cc.s:
 	$(MAKE) -f CMakeFiles/gcn.dir/build.make CMakeFiles/gcn.dir/GCNextractor.cc.s
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/GCNextractor.cc.s
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/GCNextractor.cc.s
 .PHONY : GCNextractor.cc.s
+
+gcn_with_flow.o: gcn_with_flow.cpp.o
+
+.PHONY : gcn_with_flow.o
+
+# target to build an object file
+gcn_with_flow.cpp.o:
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/gcn_with_flow.cpp.o
+.PHONY : gcn_with_flow.cpp.o
+
+gcn_with_flow.i: gcn_with_flow.cpp.i
+
+.PHONY : gcn_with_flow.i
+
+# target to preprocess a source file
+gcn_with_flow.cpp.i:
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/gcn_with_flow.cpp.i
+.PHONY : gcn_with_flow.cpp.i
+
+gcn_with_flow.s: gcn_with_flow.cpp.s
+
+.PHONY : gcn_with_flow.s
+
+# target to generate assembly for a file
+gcn_with_flow.cpp.s:
+	$(MAKE) -f CMakeFiles/gcn_with_flow.dir/build.make CMakeFiles/gcn_with_flow.dir/gcn_with_flow.cpp.s
+.PHONY : gcn_with_flow.cpp.s
 
 test1.o: test1.cpp.o
 
@@ -177,21 +236,56 @@ test1.cpp.s:
 	$(MAKE) -f CMakeFiles/gcn.dir/build.make CMakeFiles/gcn.dir/test1.cpp.s
 .PHONY : test1.cpp.s
 
+video.o: video.cpp.o
+
+.PHONY : video.o
+
+# target to build an object file
+video.cpp.o:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.o
+.PHONY : video.cpp.o
+
+video.i: video.cpp.i
+
+.PHONY : video.i
+
+# target to preprocess a source file
+video.cpp.i:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.i
+.PHONY : video.cpp.i
+
+video.s: video.cpp.s
+
+.PHONY : video.s
+
+# target to generate assembly for a file
+video.cpp.s:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.s
+.PHONY : video.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
 	@echo "... gcn"
+	@echo "... gcn_with_flow"
+	@echo "... video"
 	@echo "... GCNextractor.o"
 	@echo "... GCNextractor.i"
 	@echo "... GCNextractor.s"
+	@echo "... gcn_with_flow.o"
+	@echo "... gcn_with_flow.i"
+	@echo "... gcn_with_flow.s"
 	@echo "... test1.o"
 	@echo "... test1.i"
 	@echo "... test1.s"
+	@echo "... video.o"
+	@echo "... video.i"
+	@echo "... video.s"
 .PHONY : help
 
 

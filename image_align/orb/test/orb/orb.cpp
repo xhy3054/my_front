@@ -28,7 +28,8 @@ int main(int argc, char const *argv[])
 
     std::vector<cv::KeyPoint> kp1,kp2;
     cv::Mat ds1,ds2;
-    std::vector<std::vector<cv::DMatch>> matches_knn;
+    //std::vector<std::vector<cv::DMatch>> matches_knn;
+    std::vector<cv::DMatch> matches_knn, matches_knn1;
 
 	if (!cap.isOpened())
 	{
@@ -67,11 +68,10 @@ int main(int argc, char const *argv[])
     	orb->detectAndCompute(frame, cv::Mat(), kp1, ds1);
     	if (kp2.size()!=0)
     	{
-    		/* code */
+    		/* 
     		bfmatcher.knnMatch(ds2, ds1, matches_knn, 2);
     		for (int i = 0; i < matches_knn.size(); ++i)
     		{
-    			/* code */
     			if (matches_knn[i][0].distance / matches_knn[i][1].distance <0.2)
     			{
     				cv::Point2f p2 = kp2[matches_knn[i][0].queryIdx].pt;
@@ -82,6 +82,24 @@ int main(int argc, char const *argv[])
     			}
 
     		}
+    		*/
+    		bfmatcher.match(ds2, ds1, matches_knn, cv::Mat());
+    		bfmatcher.match(ds1, ds2, matches_knn1, cv::Mat());
+    		for (int i = 0; i < matches_knn.size(); ++i)//matches_knn.size()
+    		{
+    			for(size_t j = 0; j< matches_knn1.size(); ++j){
+    				if (matches_knn[i].queryIdx==matches_knn1[j].trainIdx && matches_knn1[j].queryIdx==matches_knn[i].trainIdx)
+    				{
+    					/* code */
+
+    					cv::Point2f p2 = kp2[matches_knn[i].queryIdx].pt;
+    					cv::Point2f p1 = kp1[matches_knn[i].trainIdx].pt;
+    					cv::circle(out, p2, 2, cv::Scalar( 255, 255, 0 ), -1, cv::LINE_AA);
+    					cv::circle(out, p1, 2, cv::Scalar( 0, 0, 255 ), -1, cv::LINE_AA);
+    					cv::line(out,  p2, p1, cv::Scalar( 0, 0, 255 ));    					
+    				}
+    			}
+    		}    		    		
     	}
     	cv::imshow("orbrt", out);
 

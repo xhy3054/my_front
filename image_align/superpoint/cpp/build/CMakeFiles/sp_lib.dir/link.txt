@@ -1,0 +1,2 @@
+/usr/bin/ar qc libsp_lib.a  CMakeFiles/sp_lib.dir/SuperPoint.cc.o
+/usr/bin/ranlib libsp_lib.a

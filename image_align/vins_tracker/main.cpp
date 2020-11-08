@@ -37,14 +37,14 @@ int main(int argc, char const *argv[])
 	//cv::namedWindow('vins_tracker', cv::WINDOW_NORMAL);
 	cv::namedWindow("vins_tracker", cv::WINDOW_NORMAL);
     //cv::resizeWindow('vins_tracker', (640, 480));
-    bool sign0=true;
-    int lost_total=0;
+    //bool sign0=true;
+    //int lost_total=0;
 
 	while(1){
 		num_frames++;
 		cv::Mat frame,out;
 		cap>>frame;
-		cv::resize(frame, frame, cv::Size(160,100), 0, 0, cv::INTER_LINEAR);
+		cv::resize(frame, frame, cv::Size(width,height), 0, 0, cv::INTER_LINEAR);
 		out = frame.clone();
 		if (frame.empty())
 		{
@@ -64,6 +64,8 @@ int main(int argc, char const *argv[])
     	}		
 
     	bool sign=trackerData.readImage(frame);
+  
+/*
 		if(!sign && !sign0)	{
 			std::cout<<"the total lost is : "<<lost_total<<std::endl;
 			time(&end);
@@ -79,7 +81,7 @@ int main(int argc, char const *argv[])
 			lost_total++;
 		}
 		sign0=sign;
-
+*/
 		
 		//return -1;
     	//todo

@@ -83,16 +83,31 @@ CMakeFiles/vins_tracker.dir/feature_tracker.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vins_tracker.dir/feature_tracker.cpp.s"
 	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/feature_tracker.cpp -o CMakeFiles/vins_tracker.dir/feature_tracker.cpp.s
 
+CMakeFiles/vins_tracker.dir/optical_flow.cpp.o: CMakeFiles/vins_tracker.dir/flags.make
+CMakeFiles/vins_tracker.dir/optical_flow.cpp.o: ../optical_flow.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/vins_tracker.dir/optical_flow.cpp.o"
+	g++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/vins_tracker.dir/optical_flow.cpp.o -c /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/optical_flow.cpp
+
+CMakeFiles/vins_tracker.dir/optical_flow.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/vins_tracker.dir/optical_flow.cpp.i"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/optical_flow.cpp > CMakeFiles/vins_tracker.dir/optical_flow.cpp.i
+
+CMakeFiles/vins_tracker.dir/optical_flow.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/vins_tracker.dir/optical_flow.cpp.s"
+	g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/optical_flow.cpp -o CMakeFiles/vins_tracker.dir/optical_flow.cpp.s
+
 # Object files for target vins_tracker
 vins_tracker_OBJECTS = \
 "CMakeFiles/vins_tracker.dir/main.cpp.o" \
-"CMakeFiles/vins_tracker.dir/feature_tracker.cpp.o"
+"CMakeFiles/vins_tracker.dir/feature_tracker.cpp.o" \
+"CMakeFiles/vins_tracker.dir/optical_flow.cpp.o"
 
 # External object files for target vins_tracker
 vins_tracker_EXTERNAL_OBJECTS =
 
 vins_tracker: CMakeFiles/vins_tracker.dir/main.cpp.o
 vins_tracker: CMakeFiles/vins_tracker.dir/feature_tracker.cpp.o
+vins_tracker: CMakeFiles/vins_tracker.dir/optical_flow.cpp.o
 vins_tracker: CMakeFiles/vins_tracker.dir/build.make
 vins_tracker: /usr/local/lib/libopencv_cudabgsegm.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudaobjdetect.so.3.4.1
@@ -117,6 +132,7 @@ vins_tracker: /usr/local/lib/libopencv_optflow.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_reg.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_rgbd.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_saliency.so.3.4.1
+vins_tracker: /usr/local/lib/libopencv_sfm.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_stereo.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_structured_light.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_surface_matching.so.3.4.1
@@ -126,24 +142,26 @@ vins_tracker: /usr/local/lib/libopencv_ximgproc.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_xobjdetect.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_xphoto.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudafeatures2d.so.3.4.1
-vins_tracker: /usr/local/lib/libopencv_shape.so.3.4.1
+vins_tracker: /usr/local/lib/libopencv_cudacodec.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudaoptflow.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudalegacy.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudawarping.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_photo.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudaimgproc.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudafilters.so.3.4.1
-vins_tracker: /usr/local/lib/libopencv_cudaarithm.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_datasets.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_plot.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_text.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_dnn.so.3.4.1
+vins_tracker: /usr/local/lib/libopencv_cudaarithm.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_ml.so.3.4.1
+vins_tracker: /usr/local/lib/libopencv_shape.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_video.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_calib3d.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_features2d.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_highgui.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_videoio.so.3.4.1
+vins_tracker: /usr/local/lib/libopencv_viz.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_phase_unwrapping.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_flann.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_imgcodecs.so.3.4.1
@@ -152,7 +170,7 @@ vins_tracker: /usr/local/lib/libopencv_imgproc.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_core.so.3.4.1
 vins_tracker: /usr/local/lib/libopencv_cudev.so.3.4.1
 vins_tracker: CMakeFiles/vins_tracker.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable vins_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable vins_tracker"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/vins_tracker.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

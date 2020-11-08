@@ -66,6 +66,7 @@ set(CMAKE_DEPEND_INFO_FILES
   "src/CMakeFiles/ORBextractor.dir/DependInfo.cmake"
   "src/CMakeFiles/myharris.dir/DependInfo.cmake"
   "test/CMakeFiles/test_harris.dir/DependInfo.cmake"
+  "test/CMakeFiles/video.dir/DependInfo.cmake"
   "test/CMakeFiles/orb.dir/DependInfo.cmake"
   "test/CMakeFiles/orb-slam.dir/DependInfo.cmake"
   )

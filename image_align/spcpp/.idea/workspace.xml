@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="SPCPP" targetName="flow" />
+      <config projectName="SPCPP" targetName="test" />
+      <config projectName="SPCPP" targetName="sf_no_update" />
+      <config projectName="SPCPP" targetName="Super" />
+      <config projectName="SPCPP" targetName="video" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="0bf0c652-4f47-4d89-bad9-c2aa6a5e993a" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../dwms/dwms_tum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dwms/dwms_vgg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dwms/dwms_vgg_F1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dwms/dwms_vgg_precision.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../dwms/dwms_vgg_recall.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/CMakeError.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/CMakeError.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/gcn.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/gcn.dir/CXX.includecache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gcn_track/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../gcn_track/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/build/test/CMakeFiles/orb-slam.dir/orb/orb-slam.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/build/test/CMakeFiles/orb-slam.dir/orb/orb-slam.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/build/test/CMakeFiles/orb.dir/orb/orb.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/build/test/CMakeFiles/orb.dir/orb/orb.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/test/orb/orb" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/test/orb/orb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/test/orb/orb-slam" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/test/orb/orb-slam" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/test/orb/orb-slam.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/test/orb/orb-slam.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../orb/test/orb/orb.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../orb/test/orb/orb.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../superpoint/demo_superpoint.py" beforeDir="false" afterPath="$PROJECT_DIR$/../superpoint/demo_superpoint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../superpoint/superpoint_track.py" beforeDir="false" afterPath="$PROJECT_DIR$/../superpoint/superpoint_track.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/CMakeLists.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/TargetDirectories.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/progress.marks" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/CMakeFiles/vins_tracker.dir/progress.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/build/vins_tracker" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/build/vins_tracker" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../vins_tracker/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/../vins_tracker/main.cpp" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="ProjectId" id="1jZwqI2vlsW8wrkOpeRLXqg6hmu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../opensource/vio/basalt/CMakeLists.txt" />
+  </component>
+  <component name="RunManager" selected="CMake Application.flow">
+    <configuration name="Super" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SPCPP" TARGET_NAME="Super" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="flow" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SPCPP" TARGET_NAME="flow" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SPCPP" RUN_TARGET_NAME="flow">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="sf_no_update" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SPCPP" TARGET_NAME="sf_no_update" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SPCPP" RUN_TARGET_NAME="sf_no_update">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SPCPP" TARGET_NAME="test" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SPCPP" RUN_TARGET_NAME="test">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="video" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="SPCPP" TARGET_NAME="video" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="SPCPP" RUN_TARGET_NAME="video">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="GradleAppRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="com.jetbrains.cidr.cpp.gradle.execution.GradleNativeBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.flow" />
+      <item itemvalue="CMake Application.sf_no_update" />
+      <item itemvalue="CMake Application.Super" />
+      <item itemvalue="CMake Application.test" />
+      <item itemvalue="CMake Application.video" />
+    </list>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0bf0c652-4f47-4d89-bad9-c2aa6a5e993a" name="Default Changelist" comment="" />
+      <created>1604025113159</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604025113159</updated>
+      <workItem from="1604025114765" duration="37000" />
+    </task>
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2983" y="477" width="424" height="484" key="FileChooserDialogImpl" timestamp="1604025147680">
+      <screen x="1920" y="0" width="2560" height="1440" />
+    </state>
+    <state x="2983" y="477" width="424" height="484" key="FileChooserDialogImpl/0.974.1920.1080/1920.0.2560.1440@1920.0.2560.1440" timestamp="1604025147680" />
+  </component>
+</project>

@@ -149,6 +149,7 @@ src/CMakeFiles/myharris.dir/clean:
 
 # Recursive "all" directory target.
 test/all: test/CMakeFiles/test_harris.dir/all
+test/all: test/CMakeFiles/video.dir/all
 test/all: test/CMakeFiles/orb.dir/all
 test/all: test/CMakeFiles/orb-slam.dir/all
 
@@ -156,6 +157,7 @@ test/all: test/CMakeFiles/orb-slam.dir/all
 
 # Recursive "clean" directory target.
 test/clean: test/CMakeFiles/test_harris.dir/clean
+test/clean: test/CMakeFiles/video.dir/clean
 test/clean: test/CMakeFiles/orb.dir/clean
 test/clean: test/CMakeFiles/orb-slam.dir/clean
 
@@ -192,6 +194,33 @@ test_harris: test/CMakeFiles/test_harris.dir/rule
 test/CMakeFiles/test_harris.dir/clean:
 	$(MAKE) -f test/CMakeFiles/test_harris.dir/build.make test/CMakeFiles/test_harris.dir/clean
 .PHONY : test/CMakeFiles/test_harris.dir/clean
+
+#=============================================================================
+# Target rules for target test/CMakeFiles/video.dir
+
+# All Build rule for target.
+test/CMakeFiles/video.dir/all: src/CMakeFiles/ORBextractor.dir/all
+	$(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/depend
+	$(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/orb/build/CMakeFiles --progress-num=11,12 "Built target video"
+.PHONY : test/CMakeFiles/video.dir/all
+
+# Build rule for subdir invocation for target.
+test/CMakeFiles/video.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/orb/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 test/CMakeFiles/video.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/orb/build/CMakeFiles 0
+.PHONY : test/CMakeFiles/video.dir/rule
+
+# Convenience name for target.
+video: test/CMakeFiles/video.dir/rule
+
+.PHONY : video
+
+# clean rule for target.
+test/CMakeFiles/video.dir/clean:
+	$(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/clean
+.PHONY : test/CMakeFiles/video.dir/clean
 
 #=============================================================================
 # Target rules for target test/CMakeFiles/orb.dir

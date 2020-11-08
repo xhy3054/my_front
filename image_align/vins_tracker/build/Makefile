@@ -56,17 +56,6 @@ CMAKE_BINARY_DIR = /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/
 #=============================================================================
 # Targets provided globally by CMake.
 
-# Special rule for the target rebuild_cache
-rebuild_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
-	/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
-.PHONY : rebuild_cache
-
-# Special rule for the target rebuild_cache
-rebuild_cache/fast: rebuild_cache
-
-.PHONY : rebuild_cache/fast
-
 # Special rule for the target edit_cache
 edit_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake cache editor..."
@@ -77,6 +66,17 @@ edit_cache:
 edit_cache/fast: edit_cache
 
 .PHONY : edit_cache/fast
+
+# Special rule for the target rebuild_cache
+rebuild_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
+	/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR)
+.PHONY : rebuild_cache
+
+# Special rule for the target rebuild_cache
+rebuild_cache/fast: rebuild_cache
+
+.PHONY : rebuild_cache/fast
 
 # The main all target
 all: cmake_check_build_system
@@ -111,6 +111,19 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named test_of
+
+# Build rule for target.
+test_of: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 test_of
+.PHONY : test_of
+
+# fast build rule for target.
+test_of/fast:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/build
+.PHONY : test_of/fast
+
+#=============================================================================
 # Target rules for targets named vins_tracker
 
 # Build rule for target.
@@ -123,6 +136,19 @@ vins_tracker/fast:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/build
 .PHONY : vins_tracker/fast
 
+#=============================================================================
+# Target rules for targets named video
+
+# Build rule for target.
+video: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 video
+.PHONY : video
+
+# fast build rule for target.
+video/fast:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
+.PHONY : video/fast
+
 feature_tracker.o: feature_tracker.cpp.o
 
 .PHONY : feature_tracker.o
@@ -130,6 +156,7 @@ feature_tracker.o: feature_tracker.cpp.o
 # target to build an object file
 feature_tracker.cpp.o:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/feature_tracker.cpp.o
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/feature_tracker.cpp.o
 .PHONY : feature_tracker.cpp.o
 
 feature_tracker.i: feature_tracker.cpp.i
@@ -139,6 +166,7 @@ feature_tracker.i: feature_tracker.cpp.i
 # target to preprocess a source file
 feature_tracker.cpp.i:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/feature_tracker.cpp.i
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/feature_tracker.cpp.i
 .PHONY : feature_tracker.cpp.i
 
 feature_tracker.s: feature_tracker.cpp.s
@@ -148,6 +176,7 @@ feature_tracker.s: feature_tracker.cpp.s
 # target to generate assembly for a file
 feature_tracker.cpp.s:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/feature_tracker.cpp.s
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/feature_tracker.cpp.s
 .PHONY : feature_tracker.cpp.s
 
 main.o: main.cpp.o
@@ -177,21 +206,119 @@ main.cpp.s:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+optical_flow.o: optical_flow.cpp.o
+
+.PHONY : optical_flow.o
+
+# target to build an object file
+optical_flow.cpp.o:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/optical_flow.cpp.o
+	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/optical_flow.cpp.o
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/optical_flow.cpp.o
+.PHONY : optical_flow.cpp.o
+
+optical_flow.i: optical_flow.cpp.i
+
+.PHONY : optical_flow.i
+
+# target to preprocess a source file
+optical_flow.cpp.i:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/optical_flow.cpp.i
+	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/optical_flow.cpp.i
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/optical_flow.cpp.i
+.PHONY : optical_flow.cpp.i
+
+optical_flow.s: optical_flow.cpp.s
+
+.PHONY : optical_flow.s
+
+# target to generate assembly for a file
+optical_flow.cpp.s:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/optical_flow.cpp.s
+	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/optical_flow.cpp.s
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/optical_flow.cpp.s
+.PHONY : optical_flow.cpp.s
+
+test_of.o: test_of.cpp.o
+
+.PHONY : test_of.o
+
+# target to build an object file
+test_of.cpp.o:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/test_of.cpp.o
+.PHONY : test_of.cpp.o
+
+test_of.i: test_of.cpp.i
+
+.PHONY : test_of.i
+
+# target to preprocess a source file
+test_of.cpp.i:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/test_of.cpp.i
+.PHONY : test_of.cpp.i
+
+test_of.s: test_of.cpp.s
+
+.PHONY : test_of.s
+
+# target to generate assembly for a file
+test_of.cpp.s:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/test_of.cpp.s
+.PHONY : test_of.cpp.s
+
+video.o: video.cpp.o
+
+.PHONY : video.o
+
+# target to build an object file
+video.cpp.o:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.o
+.PHONY : video.cpp.o
+
+video.i: video.cpp.i
+
+.PHONY : video.i
+
+# target to preprocess a source file
+video.cpp.i:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.i
+.PHONY : video.cpp.i
+
+video.s: video.cpp.s
+
+.PHONY : video.s
+
+# target to generate assembly for a file
+video.cpp.s:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/video.cpp.s
+.PHONY : video.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
 	@echo "... all (the default if no target is provided)"
 	@echo "... clean"
 	@echo "... depend"
-	@echo "... rebuild_cache"
-	@echo "... vins_tracker"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... test_of"
+	@echo "... vins_tracker"
+	@echo "... video"
 	@echo "... feature_tracker.o"
 	@echo "... feature_tracker.i"
 	@echo "... feature_tracker.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... optical_flow.o"
+	@echo "... optical_flow.i"
+	@echo "... optical_flow.s"
+	@echo "... test_of.o"
+	@echo "... test_of.i"
+	@echo "... test_of.s"
+	@echo "... video.o"
+	@echo "... video.i"
+	@echo "... video.s"
 .PHONY : help
 
 

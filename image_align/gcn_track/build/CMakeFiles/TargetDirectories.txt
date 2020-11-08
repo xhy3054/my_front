@@ -1,3 +1,5 @@
-/home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/rebuild_cache.dir
 /home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/edit_cache.dir
+/home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/rebuild_cache.dir
 /home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/gcn.dir
+/home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/gcn_with_flow.dir
+/home/sky/workspace/myrepo/my_front/image_align/gcn_track/build/CMakeFiles/video.dir

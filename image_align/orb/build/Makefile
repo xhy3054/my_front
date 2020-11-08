@@ -150,6 +150,19 @@ test_harris/fast:
 .PHONY : test_harris/fast
 
 #=============================================================================
+# Target rules for targets named video
+
+# Build rule for target.
+video: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 video
+.PHONY : video
+
+# fast build rule for target.
+video/fast:
+	$(MAKE) -f test/CMakeFiles/video.dir/build.make test/CMakeFiles/video.dir/build
+.PHONY : video/fast
+
+#=============================================================================
 # Target rules for targets named orb
 
 # Build rule for target.
@@ -186,6 +199,7 @@ help:
 	@echo "... ORBextractor"
 	@echo "... myharris"
 	@echo "... test_harris"
+	@echo "... video"
 	@echo "... orb"
 	@echo "... orb-slam"
 .PHONY : help

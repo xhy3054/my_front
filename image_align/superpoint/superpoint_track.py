@@ -124,8 +124,8 @@ class SuperPointFrontend(object):
       nmsed_corners - 3xN numpy matrix with surviving corners.
       nmsed_inds - N length numpy vector with surviving corner indices.
     """
-    grid = np.zeros((H, W)).astype(int) # Track NMS data.
-    inds = np.zeros((H, W)).astype(int) # Store indices of points.
+    grid = np.zeros((H, W)).astype(int) # Track NMS data. 标记该位置是否是角点
+    inds = np.zeros((H, W)).astype(int) # Store indices of points. 按照响应值排序的序号
     # Sort by confidence and round to nearest int.
     inds1 = np.argsort(-in_corners[2,:])
     corners = in_corners[:,inds1]
@@ -141,10 +141,10 @@ class SuperPointFrontend(object):
       grid[rcorners[1,i], rcorners[0,i]] = 1
       inds[rcorners[1,i], rcorners[0,i]] = i
     # Pad the border of the grid, so that we can NMS points near the border.
-    pad = dist_thresh
+    pad = dist_thresh #在图像四周，贴上4个像素边框
     grid = np.pad(grid, ((pad,pad), (pad,pad)), mode='constant')
     # Iterate through points, highest to lowest conf, suppress neighborhood.
-    count = 0
+    count = 0 #从响应值高到低，如果一个位置被检测到了，则其附近8*8的区域其他点都被清洗掉
     for i, rc in enumerate(rcorners.T):
       # Account for top and left padding.
       pt = (rc[0]+pad, rc[1]+pad)
@@ -156,10 +156,10 @@ class SuperPointFrontend(object):
     keepy, keepx = np.where(grid==-1)
     keepy, keepx = keepy - pad, keepx - pad
     inds_keep = inds[keepy, keepx]
-    out = corners[:, inds_keep]
+    out = corners[:, inds_keep] #取出保留下来的关键点
     values = out[-1, :]
-    inds2 = np.argsort(-values)
-    out = out[:, inds2]
+    inds2 = np.argsort(-values) #重新排序
+    out = out[:, inds2] 
     out_inds = inds1[inds_keep[inds2]]
     return out, out_inds
 
@@ -181,23 +181,25 @@ class SuperPointFrontend(object):
     inp = torch.autograd.Variable(inp).view(1, 1, H, W)
     if self.cuda:
       inp = inp.cuda()
-    # Forward pass of network.
+    # Forward pass of network. 网络前向推导
     outs = self.net.forward(inp)
     semi, coarse_desc = outs[0], outs[1]
-    # Convert pytorch -> numpy.
+    # Convert pytorch -> numpy. 
     semi = semi.data.cpu().numpy().squeeze()
     # --- Process points.
-    dense = np.exp(semi) # Softmax.
+    dense = np.exp(semi) # Softmax. softmax归一化
     dense = dense / (np.sum(dense, axis=0)+.00001) # Should sum to 1.
-    # Remove dustbin.
+    # Remove dustbin. 去除垃圾通道
     nodust = dense[:-1, :, :]
-    # Reshape to get full resolution heatmap.
+    # Reshape to get full resolution heatmap. 对tensor进行重排生成全分辨率的响应图
     Hc = int(H / self.cell)
     Wc = int(W / self.cell)
     nodust = nodust.transpose(1, 2, 0)
     heatmap = np.reshape(nodust, [Hc, Wc, self.cell, self.cell])
     heatmap = np.transpose(heatmap, [0, 2, 1, 3])
     heatmap = np.reshape(heatmap, [Hc*self.cell, Wc*self.cell])
+
+    # 根据阈值筛选出关键点
     xs, ys = np.where(heatmap >= self.conf_thresh) # Confidence threshold.
     if len(xs) == 0:
       return np.zeros((3, 0)), None, None
@@ -205,10 +207,12 @@ class SuperPointFrontend(object):
     pts[0, :] = ys
     pts[1, :] = xs
     pts[2, :] = heatmap[xs, ys]
+
+    # 非极大值抑制 
     pts, _ = self.nms_fast(pts, H, W, dist_thresh=self.nms_dist) # Apply NMS.
     inds = np.argsort(pts[2,:])
     pts = pts[:,inds[::-1]] # Sort by confidence.
-    # Remove points along border.
+    # Remove points along border.去除在图片边界处的点
     bord = self.border_remove
     toremoveW = np.logical_or(pts[0, :] < bord, pts[0, :] >= (W-bord))
     toremoveH = np.logical_or(pts[1, :] < bord, pts[1, :] >= (H-bord))
@@ -220,6 +224,7 @@ class SuperPointFrontend(object):
       desc = np.zeros((D, 0))
     else:
       # Interpolate into descriptor map using 2D point locations.
+      # 使用2d点位置插入描述子层获得描述子
       samp_pts = torch.from_numpy(pts[:2, :].copy())
       samp_pts[0, :] = (samp_pts[0, :] / (float(W)/2.)) - 1.
       samp_pts[1, :] = (samp_pts[1, :] / (float(H)/2.)) - 1.
@@ -243,11 +248,11 @@ class PointTracker(object):
   """
 
   def __init__(self, max_length, nn_thresh):
-    if max_length < 2:
+    if max_length < 2:  #必须大于等于2
       raise ValueError('max_length must be greater than or equal to 2.')
-    self.maxl = max_length
-    self.nn_thresh = nn_thresh
-    self.all_pts = []
+    self.maxl = max_length  #存储的跟踪长度
+    self.nn_thresh = nn_thresh  #0.7
+    self.all_pts = [] #存储跟踪的点
     for n in range(self.maxl):
       self.all_pts.append(np.zeros((2, 0)))
     self.last_desc = None
@@ -273,15 +278,15 @@ class PointTracker(object):
       return np.zeros((3, 0))
     if nn_thresh < 0.0:
       raise ValueError('\'nn_thresh\' should be non-negative')
-    # Compute L2 distance. Easy since vectors are unit normalized.
+    # Compute L2 distance. Easy since vectors are unit normalized. 计算l2距离
     dmat = np.dot(desc1.T, desc2)
     dmat = np.sqrt(2-2*np.clip(dmat, -1, 1))
-    # Get NN indices and scores.
+    # Get NN indices and scores.  得到最近邻
     idx = np.argmin(dmat, axis=1)
     scores = dmat[np.arange(dmat.shape[0]), idx]
-    # Threshold the NN matches.
+    # Threshold the NN matches.   最近邻距离需要小于0.7
     keep = scores < nn_thresh
-    # Check if nearest neighbor goes both directions and keep those.
+    # Check if nearest neighbor goes both directions and keep those. 检查双向匹配
     idx2 = np.argmin(dmat, axis=0)
     keep_bi = np.arange(len(idx)) == idx2[idx]
     keep = np.logical_and(keep, keep_bi)
@@ -533,9 +538,9 @@ if __name__ == '__main__':
       help='Images to skip if input is movie or directory (default: 1).')
   parser.add_argument('--show_extra', action='store_true',
       help='Show extra debug outputs (default: False).')
-  parser.add_argument('--H', type=int, default=400,
+  parser.add_argument('--H', type=int, default=100,
       help='Input image height (default: 120).')
-  parser.add_argument('--W', type=int, default=640,
+  parser.add_argument('--W', type=int, default=160,
       help='Input image width (default:160).')
   parser.add_argument('--display_scale', type=int, default=2,
       help='Factor to scale output visualization (default: 2).')

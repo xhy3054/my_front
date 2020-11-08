@@ -160,13 +160,15 @@ bool FeatureTracker::readImage(const cv::Mat &_img)
         //调用cv::calcOpticalFlowPyrLK()对前一帧的特征点cur_pts进行LK金字塔光流跟踪，得到forw_pts
         //status标记了从前一帧cur_img到forw_img特征点的跟踪状态，无法被追踪到的点标记为0
         cv::calcOpticalFlowPyrLK(cur_img, forw_img, cur_pts, forw_pts, status, err, cv::Size(21, 21), 3);
+        //OpticalFlowMultiLevel(cur_img, forw_img, cur_pts, forw_pts, status, false);
 
 
         if (FLOW_BACK)
         {
             std::vector<uchar> reverse_status;
-            std::vector<cv::Point2f> reverse_pts = prev_pts;
+            std::vector<cv::Point2f> reverse_pts;// = prev_pts;
             cv::calcOpticalFlowPyrLK(forw_img, cur_img, forw_pts, reverse_pts, reverse_status, err, cv::Size(21,21), 3);
+            //OpticalFlowMultiLevel(forw_img, cur_img, forw_pts, reverse_pts, reverse_status, false);
             for (size_t i = 0; i < status.size(); ++i)
             {
                 if (status[i] && reverse_status[i] && distance(cur_pts[i], reverse_pts[i]) <= 0.3)
@@ -191,8 +193,11 @@ bool FeatureTracker::readImage(const cv::Mat &_img)
         //记录特征点id的ids，和记录特征点被跟踪次数的track_cnt也要剔除
         //reduceVector(prev_pts, status);
         reduceVector(forw_pts, status);
-        if(static_cast<int>(forw_pts.size())<=8)
+        
+        if(static_cast<int>(forw_pts.size())<=8){
+            std::cout<<"过滤后跟踪成功的点数量小于等于8，因此去掉当前帧！"<<std::endl;
             return false;
+        }
         reduceVector(cur_pts, status);
         
         reduceVector(ids, status);

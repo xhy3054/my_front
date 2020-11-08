@@ -53,12 +53,16 @@ CMAKE_BINARY_DIR = /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: CMakeFiles/test_of.dir/all
 all: CMakeFiles/vins_tracker.dir/all
+all: CMakeFiles/video.dir/all
 
 .PHONY : all
 
 # The main recursive "clean" target.
+clean: CMakeFiles/test_of.dir/clean
 clean: CMakeFiles/vins_tracker.dir/clean
+clean: CMakeFiles/video.dir/clean
 
 .PHONY : clean
 
@@ -68,18 +72,45 @@ preinstall:
 .PHONY : preinstall
 
 #=============================================================================
+# Target rules for target CMakeFiles/test_of.dir
+
+# All Build rule for target.
+CMakeFiles/test_of.dir/all:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/depend
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=1,2,3 "Built target test_of"
+.PHONY : CMakeFiles/test_of.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/test_of.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 3
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/test_of.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 0
+.PHONY : CMakeFiles/test_of.dir/rule
+
+# Convenience name for target.
+test_of: CMakeFiles/test_of.dir/rule
+
+.PHONY : test_of
+
+# clean rule for target.
+CMakeFiles/test_of.dir/clean:
+	$(MAKE) -f CMakeFiles/test_of.dir/build.make CMakeFiles/test_of.dir/clean
+.PHONY : CMakeFiles/test_of.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/vins_tracker.dir
 
 # All Build rule for target.
 CMakeFiles/vins_tracker.dir/all:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/depend
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=1,2,3 "Built target vins_tracker"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=8,9,10,11 "Built target vins_tracker"
 .PHONY : CMakeFiles/vins_tracker.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/vins_tracker.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 4
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/vins_tracker.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 0
 .PHONY : CMakeFiles/vins_tracker.dir/rule
@@ -93,6 +124,33 @@ vins_tracker: CMakeFiles/vins_tracker.dir/rule
 CMakeFiles/vins_tracker.dir/clean:
 	$(MAKE) -f CMakeFiles/vins_tracker.dir/build.make CMakeFiles/vins_tracker.dir/clean
 .PHONY : CMakeFiles/vins_tracker.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/video.dir
+
+# All Build rule for target.
+CMakeFiles/video.dir/all:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/depend
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles --progress-num=4,5,6,7 "Built target video"
+.PHONY : CMakeFiles/video.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/video.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 4
+	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/video.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles 0
+.PHONY : CMakeFiles/video.dir/rule
+
+# Convenience name for target.
+video: CMakeFiles/video.dir/rule
+
+.PHONY : video
+
+# clean rule for target.
+CMakeFiles/video.dir/clean:
+	$(MAKE) -f CMakeFiles/video.dir/build.make CMakeFiles/video.dir/clean
+.PHONY : CMakeFiles/video.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

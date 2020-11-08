@@ -6,6 +6,7 @@
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/src/CMakeFiles/myharris.dir
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/rebuild_cache.dir
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/test_harris.dir
+/home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/video.dir
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/edit_cache.dir
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/orb.dir
 /home/sky/workspace/myrepo/my_front/image_align/orb/build/test/CMakeFiles/orb-slam.dir

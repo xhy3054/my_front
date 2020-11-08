@@ -9,6 +9,7 @@
 #include <opencv2/opencv.hpp>
 #include <eigen3/Eigen/Dense>
 #include <time.h>
+#include "optical_flow.h"
 
 #include "tic_toc.h"
 

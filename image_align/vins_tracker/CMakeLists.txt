@@ -37,6 +37,22 @@ include_directories(
 add_executable(vins_tracker
     main.cpp
     feature_tracker.cpp
+    optical_flow.cpp
     )
 
 target_link_libraries(vins_tracker ${OpenCV_LIBS})
+
+add_executable(video
+    video.cpp
+    feature_tracker.cpp
+    optical_flow.cpp
+    )
+
+target_link_libraries(video ${OpenCV_LIBS})
+
+add_executable(test_of
+    test_of.cpp
+    optical_flow.cpp
+    )
+
+target_link_libraries(test_of ${OpenCV_LIBS})

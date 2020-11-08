@@ -6,6 +6,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/feature_tracker.cpp" "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles/vins_tracker.dir/feature_tracker.cpp.o"
   "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/main.cpp" "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles/vins_tracker.dir/main.cpp.o"
+  "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/optical_flow.cpp" "/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/build/CMakeFiles/vins_tracker.dir/optical_flow.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +18,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/include/eigen3"
+  "/usr/local/include/eigen3"
   "/usr/local/include/opencv"
   )
 

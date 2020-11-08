@@ -1,0 +1,4 @@
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/cmake-build-debug/CMakeFiles/video.dir
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/sky/workspace/myrepo/my_front/image_align/vins_tracker/cmake-build-debug/CMakeFiles/vins_tracker.dir

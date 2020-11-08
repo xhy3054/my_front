@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="SPCPP"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\Documents\;CMake Files\..\..\..\..\..\Documents\libtorch\;CMake Files\..\..\..\..\..\Documents\libtorch\share\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Torch\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\;CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\;CMake Files\cmake-build-debug\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sf_no_update">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/sf_no_update" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 sf_no_update"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="sf_no_update/fast">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/sf_no_update" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 sf_no_update/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Super">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/libSuper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Super"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Super/fast">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/libSuper.so" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 Super/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="video">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/video" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 video"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="video/fast">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/video" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 video/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 test"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test/fast">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/test" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 test/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flow">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/flow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 flow"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flow/fast">
+				<Option output="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/flow" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DOPENCV_TRAITS_ENABLE_DEPRECATED"/>
+					<Add directory="/home/sky/Documents/libtorch/include"/>
+					<Add directory="/home/sky/Documents/libtorch/include/torch/csrc/api/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/local/include/opencv"/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/7"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/7"/>
+					<Add directory="/usr/include/c++/7/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 flow/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/SPDetector.cpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/SPDetector.hpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/SuperPoint.cpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/SuperPoint.hpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/Tools.cpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/Tools.hpp">
+			<Option target="Super"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/sf_no_update.cpp">
+			<Option target="sf_no_update"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/sp_with_flow.cpp">
+			<Option target="flow"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/test.cpp">
+			<Option target="test"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/video.cpp">
+			<Option target="video"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Torch/TorchConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Torch/TorchConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Torch\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Caffe2Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Caffe2ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/public/cuda.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/public/mkl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/public/mkldnn.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/public/threads.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/public/utils.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\public\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDNN.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/CMakeInitializeConfigs.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageHandleStandardArgs.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageMessage.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../Documents/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Documents\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../../../usr/local/share/OpenCV/OpenCVConfig-version.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../../../usr/local/share/OpenCV/OpenCVConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../../../usr/local/share/OpenCV/OpenCVModules-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/../../../../../../../usr/local/share/OpenCV/OpenCVModules.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\share\OpenCV\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/detect_cuda_compute_capabilities.cpp">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+		<Unit filename="/home/sky/workspace/myrepo/my_front/image_align/spcpp/cmake-build-debug/detect_cuda_version.cc">
+			<Option virtualFolder="CMake Files\cmake-build-debug\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>
