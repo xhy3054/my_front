@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/main.cpp
+video_io.h
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/video_io.h
+algorithm
+-
+chrono
+-
+iostream
+-
+vio_config.h
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/vio_config.h
+
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/video_io.h
+opencv2/opencv.hpp
+-
+string
+-
+vector
+-
+ctime
+-
+iostream
+-
+iomanip
+-
+limits
+-
+vio_config.h
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/vio_config.h
+
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/vio_config.h
+string
+-
+

@@ -1,0 +1,6 @@
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/rebuild_cache.dir
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/edit_cache.dir
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/test_tracker.dir
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/test.dir
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/io.dir
+/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/tracker.dir

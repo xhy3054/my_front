@@ -1,0 +1,760 @@
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fddb3/fast && /usr/bin/make -f CMakeFiles/cmTC_fddb3.dir/build.make CMakeFiles/cmTC_fddb3.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fddb3.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_fddb3.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fddb3
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fddb3.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_fddb3.dir/src.cxx.o  -o cmTC_fddb3 
+CMakeFiles/cmTC_fddb3.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fddb3.dir/build.make:86: recipe for target 'cmTC_fddb3' failed
+make[1]: *** [cmTC_fddb3] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fddb3/fast' failed
+make: *** [cmTC_fddb3/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d5919/fast && /usr/bin/make -f CMakeFiles/cmTC_d5919.dir/build.make CMakeFiles/cmTC_d5919.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d5919.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_d5919.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_d5919
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d5919.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_d5919.dir/CheckFunctionExists.cxx.o  -o cmTC_d5919 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d5919.dir/build.make:86: recipe for target 'cmTC_d5919' failed
+make[1]: *** [cmTC_d5919] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d5919/fast' failed
+make: *** [cmTC_d5919/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_f0652/fast && /usr/bin/make -f CMakeFiles/cmTC_f0652.dir/build.make CMakeFiles/cmTC_f0652.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f0652.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD   -o CMakeFiles/cmTC_f0652.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f0652
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f0652.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_f0652.dir/src.cxx.o  -o cmTC_f0652 
+CMakeFiles/cmTC_f0652.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_f0652.dir/build.make:86: recipe for target 'cmTC_f0652' failed
+make[1]: *** [cmTC_f0652] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_f0652/fast' failed
+make: *** [cmTC_f0652/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_94da9/fast && /usr/bin/make -f CMakeFiles/cmTC_94da9.dir/build.make CMakeFiles/cmTC_94da9.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94da9.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_94da9.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_94da9
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94da9.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_94da9.dir/CheckFunctionExists.cxx.o  -o cmTC_94da9 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_94da9.dir/build.make:86: recipe for target 'cmTC_94da9' failed
+make[1]: *** [cmTC_94da9] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_94da9/fast' failed
+make: *** [cmTC_94da9/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0424/fast && make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_a0424.dir/build.make CMakeFiles/cmTC_a0424.dir/build
+make[2]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0424.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_a0424.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a0424
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0424.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a0424.dir/src.cxx.o  -o cmTC_a0424 
+CMakeFiles/cmTC_a0424.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a0424.dir/build.make:86: recipe for target 'cmTC_a0424' failed
+make[2]: *** [cmTC_a0424] Error 1
+make[2]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a0424/fast' failed
+make[1]: *** [cmTC_a0424/fast] Error 2
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_6e359/fast && make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTC_6e359.dir/build.make CMakeFiles/cmTC_6e359.dir/build
+make[2]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6e359.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_6e359.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_6e359
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6e359.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_6e359.dir/CheckFunctionExists.cxx.o  -o cmTC_6e359 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_6e359.dir/build.make:86: recipe for target 'cmTC_6e359' failed
+make[2]: *** [cmTC_6e359] Error 1
+make[2]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_6e359/fast' failed
+make[1]: *** [cmTC_6e359/fast] Error 2
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_40b54/fast && /usr/bin/make -f CMakeFiles/cmTC_40b54.dir/build.make CMakeFiles/cmTC_40b54.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_40b54.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_40b54.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_40b54
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_40b54.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_40b54.dir/src.cxx.o  -o cmTC_40b54 
+CMakeFiles/cmTC_40b54.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_40b54.dir/build.make:86: recipe for target 'cmTC_40b54' failed
+make[1]: *** [cmTC_40b54] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_40b54/fast' failed
+make: *** [cmTC_40b54/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9c08d/fast && /usr/bin/make -f CMakeFiles/cmTC_9c08d.dir/build.make CMakeFiles/cmTC_9c08d.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c08d.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_9c08d.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_9c08d
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c08d.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_9c08d.dir/CheckFunctionExists.cxx.o  -o cmTC_9c08d -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9c08d.dir/build.make:86: recipe for target 'cmTC_9c08d' failed
+make[1]: *** [cmTC_9c08d] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_9c08d/fast' failed
+make: *** [cmTC_9c08d/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_d04f8/fast && /usr/bin/make -f CMakeFiles/cmTC_d04f8.dir/build.make CMakeFiles/cmTC_d04f8.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d04f8.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_d04f8.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d04f8
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d04f8.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_d04f8.dir/src.cxx.o  -o cmTC_d04f8 
+CMakeFiles/cmTC_d04f8.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_d04f8.dir/build.make:86: recipe for target 'cmTC_d04f8' failed
+make[1]: *** [cmTC_d04f8] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_d04f8/fast' failed
+make: *** [cmTC_d04f8/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_fc1ef/fast && /usr/bin/make -f CMakeFiles/cmTC_fc1ef.dir/build.make CMakeFiles/cmTC_fc1ef.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fc1ef.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_fc1ef.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_fc1ef
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc1ef.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_fc1ef.dir/CheckFunctionExists.cxx.o  -o cmTC_fc1ef -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_fc1ef.dir/build.make:86: recipe for target 'cmTC_fc1ef' failed
+make[1]: *** [cmTC_fc1ef] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_fc1ef/fast' failed
+make: *** [cmTC_fc1ef/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_17f66/fast && /usr/bin/make -f CMakeFiles/cmTC_17f66.dir/build.make CMakeFiles/cmTC_17f66.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_17f66.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_17f66.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_17f66
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17f66.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_17f66.dir/src.cxx.o  -o cmTC_17f66 
+CMakeFiles/cmTC_17f66.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_17f66.dir/build.make:86: recipe for target 'cmTC_17f66' failed
+make[1]: *** [cmTC_17f66] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_17f66/fast' failed
+make: *** [cmTC_17f66/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_4a060/fast && /usr/bin/make -f CMakeFiles/cmTC_4a060.dir/build.make CMakeFiles/cmTC_4a060.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a060.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_4a060.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_4a060
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a060.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_4a060.dir/CheckFunctionExists.cxx.o  -o cmTC_4a060 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_4a060.dir/build.make:86: recipe for target 'cmTC_4a060' failed
+make[1]: *** [cmTC_4a060] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_4a060/fast' failed
+make: *** [cmTC_4a060/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_c1505/fast && /usr/bin/make -f CMakeFiles/cmTC_c1505.dir/build.make CMakeFiles/cmTC_c1505.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1505.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_c1505.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_c1505
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1505.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_c1505.dir/src.cxx.o  -o cmTC_c1505 
+CMakeFiles/cmTC_c1505.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_c1505.dir/build.make:86: recipe for target 'cmTC_c1505' failed
+make[1]: *** [cmTC_c1505] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_c1505/fast' failed
+make: *** [cmTC_c1505/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_1386a/fast && /usr/bin/make -f CMakeFiles/cmTC_1386a.dir/build.make CMakeFiles/cmTC_1386a.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1386a.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_1386a.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_1386a
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1386a.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_1386a.dir/CheckFunctionExists.cxx.o  -o cmTC_1386a -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_1386a.dir/build.make:86: recipe for target 'cmTC_1386a' failed
+make[1]: *** [cmTC_1386a] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_1386a/fast' failed
+make: *** [cmTC_1386a/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_81442/fast && /usr/bin/make -f CMakeFiles/cmTC_81442.dir/build.make CMakeFiles/cmTC_81442.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_81442.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_81442.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_81442
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_81442.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_81442.dir/src.cxx.o  -o cmTC_81442 
+CMakeFiles/cmTC_81442.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_81442.dir/build.make:86: recipe for target 'cmTC_81442' failed
+make[1]: *** [cmTC_81442] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_81442/fast' failed
+make: *** [cmTC_81442/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a0b25/fast && /usr/bin/make -f CMakeFiles/cmTC_a0b25.dir/build.make CMakeFiles/cmTC_a0b25.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a0b25.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_a0b25.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_a0b25
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a0b25.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_a0b25.dir/CheckFunctionExists.cxx.o  -o cmTC_a0b25 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a0b25.dir/build.make:86: recipe for target 'cmTC_a0b25' failed
+make[1]: *** [cmTC_a0b25] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a0b25/fast' failed
+make: *** [cmTC_a0b25/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_9f200/fast && /usr/bin/make -f CMakeFiles/cmTC_9f200.dir/build.make CMakeFiles/cmTC_9f200.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9f200.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_9f200.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9f200
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9f200.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_9f200.dir/src.cxx.o  -o cmTC_9f200 
+CMakeFiles/cmTC_9f200.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_9f200.dir/build.make:86: recipe for target 'cmTC_9f200' failed
+make[1]: *** [cmTC_9f200] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_9f200/fast' failed
+make: *** [cmTC_9f200/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_67fce/fast && /usr/bin/make -f CMakeFiles/cmTC_67fce.dir/build.make CMakeFiles/cmTC_67fce.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_67fce.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_67fce.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_67fce
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_67fce.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_67fce.dir/CheckFunctionExists.cxx.o  -o cmTC_67fce -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_67fce.dir/build.make:86: recipe for target 'cmTC_67fce' failed
+make[1]: *** [cmTC_67fce] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_67fce/fast' failed
+make: *** [cmTC_67fce/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_e6d3c/fast && /usr/bin/make -f CMakeFiles/cmTC_e6d3c.dir/build.make CMakeFiles/cmTC_e6d3c.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e6d3c.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_e6d3c.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e6d3c
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e6d3c.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_e6d3c.dir/src.cxx.o  -o cmTC_e6d3c 
+CMakeFiles/cmTC_e6d3c.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_e6d3c.dir/build.make:86: recipe for target 'cmTC_e6d3c' failed
+make[1]: *** [cmTC_e6d3c] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_e6d3c/fast' failed
+make: *** [cmTC_e6d3c/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_ef056/fast && /usr/bin/make -f CMakeFiles/cmTC_ef056.dir/build.make CMakeFiles/cmTC_ef056.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef056.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_ef056.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_ef056
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef056.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_ef056.dir/CheckFunctionExists.cxx.o  -o cmTC_ef056 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_ef056.dir/build.make:86: recipe for target 'cmTC_ef056' failed
+make[1]: *** [cmTC_ef056] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_ef056/fast' failed
+make: *** [cmTC_ef056/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_84ba3/fast && /usr/bin/make -f CMakeFiles/cmTC_84ba3.dir/build.make CMakeFiles/cmTC_84ba3.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_84ba3.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_84ba3.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_84ba3
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_84ba3.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_84ba3.dir/src.cxx.o  -o cmTC_84ba3 
+CMakeFiles/cmTC_84ba3.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_84ba3.dir/build.make:86: recipe for target 'cmTC_84ba3' failed
+make[1]: *** [cmTC_84ba3] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_84ba3/fast' failed
+make: *** [cmTC_84ba3/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_417a5/fast && /usr/bin/make -f CMakeFiles/cmTC_417a5.dir/build.make CMakeFiles/cmTC_417a5.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_417a5.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_417a5.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_417a5
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_417a5.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_417a5.dir/CheckFunctionExists.cxx.o  -o cmTC_417a5 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_417a5.dir/build.make:86: recipe for target 'cmTC_417a5' failed
+make[1]: *** [cmTC_417a5] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_417a5/fast' failed
+make: *** [cmTC_417a5/fast] Error 2
+
+
+
+Performing C++ SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_a959d/fast && /usr/bin/make -f CMakeFiles/cmTC_a959d.dir/build.make CMakeFiles/cmTC_a959d.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a959d.dir/src.cxx.o
+/usr/bin/c++    -DCMAKE_HAVE_LIBC_PTHREAD -fPIE   -o CMakeFiles/cmTC_a959d.dir/src.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a959d
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a959d.dir/link.txt --verbose=1
+/usr/bin/c++   -DCMAKE_HAVE_LIBC_PTHREAD    -rdynamic CMakeFiles/cmTC_a959d.dir/src.cxx.o  -o cmTC_a959d 
+CMakeFiles/cmTC_a959d.dir/src.cxx.o: In function `main':
+src.cxx:(.text+0x3e): undefined reference to `pthread_create'
+src.cxx:(.text+0x4a): undefined reference to `pthread_detach'
+src.cxx:(.text+0x5b): undefined reference to `pthread_join'
+src.cxx:(.text+0x6f): undefined reference to `pthread_atfork'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_a959d.dir/build.make:86: recipe for target 'cmTC_a959d' failed
+make[1]: *** [cmTC_a959d] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_a959d/fast' failed
+make: *** [cmTC_a959d/fast] Error 2
+
+
+Source file was:
+#include <pthread.h>
+
+void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/make cmTC_97aa8/fast && /usr/bin/make -f CMakeFiles/cmTC_97aa8.dir/build.make CMakeFiles/cmTC_97aa8.dir/build
+make[1]: Entering directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_97aa8.dir/CheckFunctionExists.cxx.o
+/usr/bin/c++    -DCHECK_FUNCTION_EXISTS=pthread_create -fPIE   -o CMakeFiles/cmTC_97aa8.dir/CheckFunctionExists.cxx.o -c /home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CheckLibraryExists/CheckFunctionExists.cxx
+Linking CXX executable cmTC_97aa8
+/home/sky/Documents/cmake-3.15.0-Linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97aa8.dir/link.txt --verbose=1
+/usr/bin/c++   -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_97aa8.dir/CheckFunctionExists.cxx.o  -o cmTC_97aa8 -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_97aa8.dir/build.make:86: recipe for target 'cmTC_97aa8' failed
+make[1]: *** [cmTC_97aa8] Error 1
+make[1]: Leaving directory '/home/sky/workspace/myrepo/my_front/image_align/basalt_tracker/build/CMakeFiles/CMakeTmp'
+Makefile:121: recipe for target 'cmTC_97aa8/fast' failed
+make: *** [cmTC_97aa8/fast] Error 2
+
+
+

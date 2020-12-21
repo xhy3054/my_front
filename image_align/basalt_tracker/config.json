@@ -1,0 +1,26 @@
+{
+    "value0": {
+        "config.optical_flow_type": "frame_to_frame",
+        "config.optical_flow_detection_grid_size": 50,
+        "config.optical_flow_max_recovered_dist2": 0.04,
+        "config.optical_flow_pattern": 51,
+        "config.optical_flow_max_iterations": 5,
+        "config.optical_flow_epipolar_error": 0.005,
+        "config.optical_flow_levels": 4,
+        "config.optical_flow_skip_frames": 1,
+
+        "config.tracker_width": 752,
+        "config.tracker_height": 480,
+        "config.tracker_max_cnt": 500,
+        "config.tracker_flow_back": 0,
+        "config.tracker_equalize": 0,
+        "config.tracker_min_dist": 15,
+        "config.tracker_f_threshold": 1,
+
+        "config.input_device": 1,
+        "config.cam_id": 2,
+        "config.cam_fps": 120,
+        "config.video_name": "/home/sky/dataset/euroc/eth.avi"
+    }
+}
+
